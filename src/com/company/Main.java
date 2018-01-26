@@ -34,8 +34,44 @@ public class Main {
             System.out.println("Buzz.");
 
          else {
-            System.out.println(userNum);
+             System.out.println(userNum);
+         }
+
+
+        /* A school has following rules fro grading system:
+        a. Below 45 - F
+        b. 45 to 50 - D
+        c. 50 to 60 - C
+        e. 60 to 80 - B
+        f. Above 80 - A
+         */
+
+
+
+        System.out.println("Enter your grade:");
+        int userGrade = input.nextInt();
+
+        if (userGrade < 45)
+            System.out.println("You have an F.");
+
+        else if(userGrade >= 45 && userGrade <= 49)
+            System.out.println("You have a D.");
+
+        else if(userGrade >=50 && userGrade <= 59)
+            System.out.println("You have a C.");
+
+        else if(userGrade >= 60 && userGrade <= 80)
+
+            System.out.println("You have a B.");
+        
+        else {
+            System.out.println("You have an A.");
         }
+
+
+
+
+
 
 
 
